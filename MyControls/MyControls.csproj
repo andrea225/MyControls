@@ -39,11 +39,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ext.cs" />
+    <Compile Include="FormProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProgressBar.Designer.cs">
+      <DependentUpon>FormProgressBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="MaskPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="MaskPanel.Designer.cs">
       <DependentUpon>MaskPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaskPanel2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MaskPanel2.Designer.cs">
+      <DependentUpon>MaskPanel2.cs</DependentUpon>
     </Compile>
     <Compile Include="MyCanvas.cs">
       <SubType>Component</SubType>
@@ -57,6 +70,12 @@
     <Compile Include="Pager.Designer.cs">
       <DependentUpon>Pager.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProgressPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProgressPanel.Designer.cs">
+      <DependentUpon>ProgressPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -65,11 +84,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormProgressBar.resx">
+      <DependentUpon>FormProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MaskPanel.resx">
       <DependentUpon>MaskPanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MaskPanel2.resx">
+      <DependentUpon>MaskPanel2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pager.resx">
       <DependentUpon>Pager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressPanel.resx">
+      <DependentUpon>ProgressPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -85,6 +113,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HYLControlLibrary\HYLControlLibrary.csproj">
+      <Project>{30bccaa5-6be7-42e3-8b1b-dfcbf2add378}</Project>
+      <Name>HYLControlLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

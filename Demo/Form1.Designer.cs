@@ -28,64 +28,128 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pager1 = new HYL.Pager();
-            this.maskPanel1 = new HYL.MaskPanel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.button3 = new System.Windows.Forms.Button();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.progressBarX3 = new HYLControlLibrary.ProgressBarX();
+            this.progressBarX2 = new HYLControlLibrary.ProgressBarX();
+            this.progressBarX1 = new HYLControlLibrary.ProgressBarX();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(370, 280);
+            this.button1.Location = new System.Drawing.Point(26, 43);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
+            this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // button2
             // 
-            this.textBox1.Location = new System.Drawing.Point(36, 90);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(211, 334);
-            this.textBox1.TabIndex = 5;
+            this.button2.Location = new System.Drawing.Point(227, 43);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // pager1
+            // progressBar1
             // 
-            this.pager1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pager1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pager1.Location = new System.Drawing.Point(0, 481);
-            this.pager1.MaximumSize = new System.Drawing.Size(9999, 25);
-            this.pager1.MinimumSize = new System.Drawing.Size(330, 25);
-            this.pager1.Name = "pager1";
-            this.pager1.ReportPageChangeOnInit = false;
-            this.pager1.Size = new System.Drawing.Size(908, 25);
-            this.pager1.TabIndex = 6;
-            this.pager1.PageChanged += new System.EventHandler<HYL.PageChangedEventArgs>(this.pager1_PageChanged);
+            this.progressBar1.Location = new System.Drawing.Point(322, 44);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(251, 23);
+            this.progressBar1.TabIndex = 9;
             // 
-            // maskPanel1
+            // button3
             // 
-            this.maskPanel1.Location = new System.Drawing.Point(689, 106);
-            this.maskPanel1.Name = "maskPanel1";
-            this.maskPanel1.Opacity = 200;
-            this.maskPanel1.Size = new System.Drawing.Size(63, 97);
-            this.maskPanel1.TabIndex = 3;
-            this.maskPanel1.Visible = false;
+            this.button3.Location = new System.Drawing.Point(133, 43);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1147, 25);
+            this.toolStrip1.TabIndex = 15;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
+            // 
+            // progressBarX3
+            // 
+            this.progressBarX3.AnimationColor = System.Drawing.Color.Snow;
+            this.progressBarX3.ForeColor = System.Drawing.Color.DarkCyan;
+            this.progressBarX3.Location = new System.Drawing.Point(218, 162);
+            this.progressBarX3.Name = "progressBarX3";
+            this.progressBarX3.Size = new System.Drawing.Size(369, 5);
+            this.progressBarX3.TabIndex = 14;
+            this.progressBarX3.Text = "progressBarX3";
+            // 
+            // progressBarX2
+            // 
+            this.progressBarX2.Location = new System.Drawing.Point(218, 198);
+            this.progressBarX2.Name = "progressBarX2";
+            this.progressBarX2.Size = new System.Drawing.Size(369, 23);
+            this.progressBarX2.TabIndex = 13;
+            this.progressBarX2.Text = "progressBarX2";
+            this.progressBarX2.Value = 20;
+            // 
+            // progressBarX1
+            // 
+            this.progressBarX1.AnimationColor = System.Drawing.Color.Maroon;
+            this.progressBarX1.AnimationSpeed = 50;
+            this.progressBarX1.AnimationWidth = 200;
+            this.progressBarX1.BorderColor = System.Drawing.Color.Black;
+            this.progressBarX1.ForeColor = System.Drawing.Color.White;
+            this.progressBarX1.Location = new System.Drawing.Point(218, 245);
+            this.progressBarX1.Maximum = 1;
+            this.progressBarX1.Name = "progressBarX1";
+            this.progressBarX1.Size = new System.Drawing.Size(369, 23);
+            this.progressBarX1.Style = HYLControlLibrary.ProgressBarStyleX.Solid;
+            this.progressBarX1.TabIndex = 12;
+            this.progressBarX1.Text = "progressBarX1";
+            this.progressBarX1.Value = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(908, 506);
-            this.Controls.Add(this.pager1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.maskPanel1);
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.ClientSize = new System.Drawing.Size(1147, 666);
+            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.progressBarX3);
+            this.Controls.Add(this.progressBarX2);
+            this.Controls.Add(this.progressBarX1);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,8 +158,13 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private HYL.MaskPanel maskPanel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private HYL.Pager pager1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Button button3;
+        private HYLControlLibrary.ProgressBarX progressBarX1;
+        private HYLControlLibrary.ProgressBarX progressBarX2;
+        private HYLControlLibrary.ProgressBarX progressBarX3;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }

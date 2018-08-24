@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyControls", "MyControls\My
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{1B3490B8-49C6-4814-B223-2F0F5A0B6A60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCanvas", "ClassLibrary1\MyCanvas.csproj", "{CE7F0921-DD15-46FC-AC00-850360A6CC34}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HYLControlLibrary", "HYLControlLibrary\HYLControlLibrary.csproj", "{30BCCAA5-6BE7-42E3-8B1B-DFCBF2ADD378}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +23,15 @@ Global
 		{1B3490B8-49C6-4814-B223-2F0F5A0B6A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B3490B8-49C6-4814-B223-2F0F5A0B6A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B3490B8-49C6-4814-B223-2F0F5A0B6A60}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CE7F0921-DD15-46FC-AC00-850360A6CC34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE7F0921-DD15-46FC-AC00-850360A6CC34}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE7F0921-DD15-46FC-AC00-850360A6CC34}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CE7F0921-DD15-46FC-AC00-850360A6CC34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30BCCAA5-6BE7-42E3-8B1B-DFCBF2ADD378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30BCCAA5-6BE7-42E3-8B1B-DFCBF2ADD378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30BCCAA5-6BE7-42E3-8B1B-DFCBF2ADD378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30BCCAA5-6BE7-42E3-8B1B-DFCBF2ADD378}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {457328A2-0592-4277-82F7-7830F6999CD9}
 	EndGlobalSection
 EndGlobal
