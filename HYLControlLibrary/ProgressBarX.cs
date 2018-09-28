@@ -44,7 +44,7 @@
             this.AnimationColor = Color.White;
             this.borderSize.All = 1;
             this.BorderStyle = BorderStyle.Single;
-            this.Style = ProgressBarStyleX.Linear;
+            this.Style = ProgressBarAnimationStyleX.Linear;
 
             this.maximum = 100;
             this.value = 50;
@@ -170,8 +170,8 @@
 
         [Category("Style")]
         [Description("进度条样式")]
-        [DefaultValue(ProgressBarStyleX.Linear)]
-        public ProgressBarStyleX Style { get; set; }
+        [DefaultValue(ProgressBarAnimationStyleX.Linear)]
+        public ProgressBarAnimationStyleX Style { get; set; }
 
         [Category("ProgressBar"), DefaultValue(50)]
         public int Value
@@ -251,7 +251,7 @@
 
             if (this.animationLeft != this.RealBorderSize.Left - this.AnimationWidth && this.animationEnable)
             {
-                if (this.Style == ProgressBarStyleX.Solid)
+                if (this.Style == ProgressBarAnimationStyleX.Solid)
                 {
                     Brush brush = new SolidBrush(this.AnimationColor);
                     pe.Graphics.FillRectangle(

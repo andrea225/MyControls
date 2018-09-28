@@ -107,6 +107,7 @@
         /// </param>
         public void Init(int recordCount, int pageSize = 20, int pageIndex = 1)
         {
+            this.inited = false;
             this.RecordCount = recordCount;
             this.PageSize = pageSize;
             this.CalculatePageCount();

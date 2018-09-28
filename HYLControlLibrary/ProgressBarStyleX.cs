@@ -1,6 +1,6 @@
 ﻿namespace HYLControlLibrary
 {
-    public enum ProgressBarStyleX
+    public enum ProgressBarAnimationStyleX
     {
         Solid,
         Linear

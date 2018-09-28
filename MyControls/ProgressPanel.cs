@@ -52,7 +52,7 @@
         }
 
         [Bindable(true), Category("Style"), Description("进图条样式")]
-        public ProgressBarStyleX Style
+        public ProgressBarAnimationStyleX Style
         {
             get => this.progressBarX1.Style;
             set => this.progressBarX1.InvokeAction(() => { this.progressBarX1.Style = value; });

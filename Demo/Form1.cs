@@ -12,31 +12,42 @@ namespace Demo
         public Form1()
         {
             InitializeComponent();
+
+            this.dataGridView1.Rows.Add(5);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            this.pager1.ReportPageChangeOnInit = false;
+            this.pager1.PageChanged += Pager1_PageChanged;
+            this.pager1.Init(105);
+
+
             //Form2 f = new Form2();
             //f.ShowDialog(this);
 
-            Task.Run(
-                () =>
-                    {
-                        while (true)
-                        {
-                            System.Threading.Thread.Sleep(500);
+            //Task.Run(
+            //    () =>
+            //        {
+            //            while (true)
+            //            {
+            //                System.Threading.Thread.Sleep(500);
 
-                            var value = this.progressBarX2.Value;
-                            value++;
-                            if (value >= this.progressBarX2.Maximum)
-                            {
-                                value = 1;
-                            }
+            //                var value = this.progressBarX2.Value;
+            //                value++;
+            //                if (value >= this.progressBarX2.Maximum)
+            //                {
+            //                    value = 1;
+            //                }
 
-                            this.progressBarX2.Value = value;
-                        }
-                    });
+            //                this.progressBarX2.Value = value;
+            //            }
+            //        });
+        }
+
+        private void Pager1_PageChanged(object sender, HYL.PageChangedEventArgs e)
+        {
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -113,7 +124,8 @@ namespace Demo
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.customControl11.Visible = true;
+            this.pager1.Init(1);
         }
+        
     }
 }
